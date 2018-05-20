@@ -1,8 +1,6 @@
 def reverse_each_word(str)
   a = str.split(" ")
-  b = []
   a.collect {
-    |x| b << x.reverse
-  }
-  b.
+    |x| x.reverse
+  }.join
 end
